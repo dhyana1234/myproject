@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Height</label>
+        <input type="number" id="height"> <br>
+        <label for="">Width</label>
+        <input type="number" id="width"> <br>
+         <input type="color" id="clr">
+         <button onclick="pinkDiv()">pink</button>
+         <button onclick="greendiv()">Green</button>
+         <button onclick="bluediv()">blue</button>
+         <button onclick="circle()">Circle</button>
+    </div>
+    <br>
+    <div id="ele">
+
+    </div>
+
+    <script>
+        function pinkDiv(){
+            var h = document.getElementById("height").value;
+            var w = document.getElementById("width").value;
+            document.getElementById("ele").style.height=h+"px";
+            document.getElementById("ele").style.width=w+"px";
+            document.getElementById("ele").style.backgroundColor="hotpink";
+
+        }
+        function greendiv(){
+           
+            var h = document.getElementById("height").value;
+            var w = document.getElementById("width").value;
+            document.getElementById("ele").style.height=h+"px";
+            document.getElementById("ele").style.width=w+"px";
+            document.getElementById("ele").style.backgroundColor="green";
+
+        }
+        function bluediv(){
+            var h = document.getElementById("height").value;
+            var w = document.getElementById("width").value;
+            document.getElementById("ele").style.height=h+"px";
+            document.getElementById("ele").style.width=w+"px";
+            document.getElementById("ele").style.backgroundColor="blue";
+
+        }
+        function circle(){
+            var h = document.getElementById("height").value;
+            var w = document.getElementById("width").value;
+            document.getElementById("ele").style.height=h+"px";
+            document.getElementById("ele").style.width=w+"px";
+            document.getElementById("ele").style.backgroundColor="red";
+            document.getElementById("ele").style.borderRadius="800px";
+
+
+        }
+
+        
+
+    </script>
+</body>
+</html>

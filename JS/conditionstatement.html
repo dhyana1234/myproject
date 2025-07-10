@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul></ul>
+    </div>
+    <input type="number" id="pos" placeholder="Enter your value">
+    <button onclick="checkvalue()">Check</button>
+    <h1 id="result"></h1>
+
+    <script>
+        function checkvalue(){
+            number = parseInt(document.getElementById("pos").value);
+            if(number>0)
+        {
+            
+           document.getElementById("result").innerText="Value is Positive";
+        }
+        else{
+            document.getElementById("result").innerText="Value is Negative";
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 300px;
+            width: 300px;
+            border: 2px solid blue;
+        }
+        #box1{
+            height: 300px;
+            width: 300px;
+            border: 2px solid rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div id="box1" ondblclick="boxEvent2()" onmouseenter="boxEvent3()" onmouseleave="boxEvent4()"></div> <br>
+    <div id="box" onclick="boxEvent()"  onmouseup="boxEvent1()"></div>
+    <button oncontextmenu="btnEvent()">Click Here</button>
+    <script>
+        function btnEvent(){
+            alert("Event is Called");
+        }
+        // function boxEvent(){
+        //     document.getElementById("box").style.backgroundColor="hotpink"
+        // }
+        function boxEvent1(){
+            document.getElementById("box").style.backgroundColor="green"
+            //  document.getElementById("box").style.height="500px"
+            //   document.getElementById("box").style.width="500px"
+        }
+        function boxEvent2(){
+            document.getElementById("box1").style.backgroundColor="orange"
+        }
+        function boxEvent3(){
+            document.getElementById("box1").style.backgroundColor="blue"
+        }
+        function boxEvent4(){
+            document.getElementById("box1").style.backgroundColor="white"
+        }
+    </script>
+</body>
+</html>

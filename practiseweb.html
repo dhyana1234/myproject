@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<style>
+    .header{
+        z-index: 2;
+        background-color: white;
+    }
+   
+    .btn1{
+       border: 3px double rgb(48, 223, 48);
+       color: rgb(48, 223, 48);
+
+    }
+    .centered {
+        text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.btn2{
+   
+  text-align: center;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ .banner{
+    height: 550px;
+    width: 100%;
+    background-image: url(Image/biotechbanner5.avif);
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ }
+ .thrive{
+    color: rgb(9, 179, 74);
+ }
+ .firstp{
+    font-size: 22px;
+    color: rgb(1, 17, 24);
+ }
+ .plant{
+    background-image: url(Image/biotech\ plant.webp);
+    width: 600px;
+    transition: transform .5s;
+   
+ }
+ .plant:hover{
+    transform: scale(1.1);
+ }
+ .firsth6{
+    font-size: 30px;
+    color: rgba(4, 39, 136, 0.671);
+ }
+ .img1{
+ background: linear-gradient(rgba(11, 3, 48, 0.459),rgba(8, 85, 46, 0.726)),
+ url("/Image/dna\ biotech.avif");
+ text-align: justify;
+ background-repeat: no-repeat;
+ background-size: cover;
+ transition: transform .5s;
+ }
+ .img1:hover{
+    transform: scale(1.1);
+ }
+ .secondpart{
+    background-color: rgb(200, 243, 219);
+    height: auto;
+ }
+ .card1{
+    background-color:rgb(243, 252, 244);
+
+ }
+ .card-img{
+    height: 150px;
+ }
+ .become{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width: 590px;
+    height: 330px;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgb(255, 255, 255, 0.8);
+   
+ }
+</style>
+<body style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    <div class="header  mt-1 d-flex align-items-center justify-content-between shadow position-sticky top-0 flex-wrap">
+        <img src="Image/biotechlogo2.jpg" width="170px" h alt="" class="rounded-circle  p-2 ms-3 ">
+          
+        <ul class="nav ">
+           <li class="nav-item"><a href="#" class="nav-link">Policy</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">Member</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+           <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+        
+        <div>
+            <button class=" btn1 btn btn-outline-success me-5">Login</button>
+        </div>
+    
+    </div>
+    <div class="banner mt-1">
+       <div class="">
+        <h1 class="centered text-white text-align-center position-absolute ">One of the Nations Most Successful Life Sciences Incubators</h1>
+
+        <button class=" btn2 btn btn-outline-light position-absolute  ">Find out Why</button>
+    </div>
+    </div>
+     <div class="secondpart">
+    <h1 class="thrive text-center mt-5 ">Thrive with Bio</h1>
+    <p class="firstp text-center px-5 mt-4" style="text-align: justify;">Members enjoy exclusive opportunities - from advocating for policies that spur innovation to receiving discounts on BIO events and through BIO’s own cost-saving program. Unlock the possibilities and join us today.</p>
+
+    <div class="container">
+        <div class="row mt-5 ">
+
+            <div class=" plant col-md-7 me-5 border border-2  d-flex justify-content-center align-items-start p-2 position-relative mb-3"><h6 class=" firsth6  shadow">We're getting a court order to have this bloke take a DNA test.</div></h6>
+
+            <div class="img1 col-md-5 text-light p-4 rounded rounded-2 mb-3  ">  Deoxyribonucleic acid (abbreviated DNA) is the molecule that carries genetic information for the development and functioning of an organism. In all living things, DNA is essential for inheritance, coding for proteins, and providing instructions for life and its processes. Scientists can use DNA technology to compare the DNA of cells in a disease state to those of a healthy state. This can help them understand the changes that occur during disease progression and develop treatments. DNA technology can also be used to create new medicine and treatment for disease, such as vaccines. 
+                  <button class="btn btn-outline-light mt-4">Explore more</button></div>
+           
+        </div>
+    </div>
+</div>
+            <h1 class="text-center mt-5 text-secondary text-bg-light ">Stay Current with BIO's News Hub</h1>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card1 card card-body border border-secondary  shadow ">
+                    <img src="Image/biotech kidney.jpg"  alt="" class="card-img">
+                    <p class="card-text text-secondary mt-2"><h5>Kidney action week: Four things you need to know about kidney disease</h5></p>
+                    <button class="btn btn-outline-success btn-sm">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></button>
+                
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card1 card card-body border border-secondary  shadow">
+                    <img src="Image/biotech drug.jpg"  alt="" class="card-img">
+                    <p class="card-text text-secondary mt-2"><h5>The Role of the Patient Voice in CMS drug price negotiation </h5></p>
+                    <button class="btn btn-outline-success btn-sm">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></button>
+                
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card1 card card-body border border-secondary  shadow">
+                    <img src="Image/biotech lab.jpg"  alt="" class="card-img">
+                    <p class="card-text text-secondary mt-2"><h5>Bio Celebrates release of FDA Rare Disease innovation Hub 2025</h5></p>
+                    <button class="btn btn-outline-success btn-sm">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></button>
+                
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card1 card card-body border border-secondary  shadow">
+                    <img src="Image/opportu bio.jpg"  alt="" class="card-img">
+                    <p class="card-text text-secondary mt-2"><h5>Goodwin Rare Disease Symposium: 'So much opportunitiy, so much</h5></p>
+                    <button class="btn btn-outline-success btn-sm">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></button>
+                
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+      <h1 class="text-center mt-5 text-bg-light text-success mb-5">Become an Advocate for Biotechnology</h1>
+      <div class="container position-relative">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="Image/become biotech.jpg" class="images" width="650" alt="">
+                <div class="become card p-3  b">
+                <h2 class="card-header border-bottom-0">Join Biotech</h2>
+                <div class="card-body card-text">Become an advocate for biotechnology and help shape policy that promotes innovation! Contact policymakers directly through BIO’s easy-to-use tool and have your voice heard.</div>
+
+                <button class="btn btn-primary w-25 ">Join Now</button>
+            </div>
+            </div>
+        </div>
+      </div>
+
+
+    
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>

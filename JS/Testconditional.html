@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="result">
+    <button onclick="save()">Submit</button>
+    <h1 id="pos"></h1>
+
+    <script>
+        function save(){
+           answer = parseInt(document.getElementById("result").value);
+            if(answer%2==0)
+        {
+            document.getElementById("pos").innerText = "value is even";
+        }
+        else{
+            document.getElementById("pos").innerText = "Value is odd";
+        }
+        }
+    </script>
+</body>
+</html>

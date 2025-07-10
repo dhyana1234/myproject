@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="amount">
+    <button id="btndiscount" onclick="calculate()">Check </button>
+    <div class="result"></div>
+
+
+    <input type="number" id="amount1">
+    <button id="btndiscount1" onclick="calculate2()">Submit </button>
+    <div class="amount1"></div>
+
+     <input type="number" id="amount2">
+    <button id="btndiscount2" onclick="calculate1()">save</button>
+    <div class="result2"></div>
+
+
+    <script>
+        function calculate(){
+            var amount = parseInt(document.getElementById("amount").value);
+            var result = amount>=33
+           ?"pass"
+            :"fail" ;
+
+            alert(result);
+        }
+        
+        function calculate2(){
+            var amountt = parseInt(document.getElementById("amount1").value);
+            var amount1 = amount>=500 && amount<=1500
+           ?  "Discount"
+            : "No Discount" ;
+
+            alert(amount1);
+        }
+
+    
+
+        function calculate1(){
+            amount = document.getElementById("amount2").value;
+            result2 = (amount %2==0)
+            ?"Even"
+            : "odd";
+            alert(result2)
+        }
+        
+      
+    </script>
+    
+</body>
+</html>

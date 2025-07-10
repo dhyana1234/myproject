@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body style="margin: 30px;">
+    <div class="BOX d-flex">
+       <div class="p-2 border border w-50 shadow bg-light">
+        <h1 class="text-primary text-center">STUDENT RESULT</h1>
+        <div>
+    <label for="" class="">Name</label>
+    <input type="text" class="form-control" id="name">  <br>
+</div>
+<div>
+    <label for="" class="">Roll No</label>
+    <input type="text" class="form-control" id="no">  <br>
+</div>
+<h3 class="text-info text-center">Subject</h3>
+
+<div>
+    <label for="">science</label>
+    <input type="number"  class="form-control" name="sub1" id="s1">  <br> 
+</div>
+
+<div>
+    <label for="">English</label>
+    <input type="number"  name="sub2" class="form-control" id="s2">  <br> 
+</div>
+
+<div>
+    <label for="">Maths</label>
+    <input type="number"  class="form-control"  name="sub3" id="s3">  <br> 
+</div>
+
+<div>
+    <label for="">Gujarati</label>
+    <input type="number"  class="form-control"  name="sub4" id="s4">  <br> 
+</div>
+
+<div>
+    <label for="">Hindi</label>
+    <input type="number"  class="form-control"  name="sub5" id="s5">  <br> 
+</div>
+
+<div>
+    <label for="">computer</label>
+    <input type="number"  class="form-control"  name="sub6" id="s6">  <br> 
+</div>
+<div>
+    <label for="">Hindi</label>
+    <input type="number"  class="form-control"  name="sub7" id="s7">   <br> 
+</div>
+
+<div>
+    <button onclick="result()" class="btn btn-primary w-100">Calculate</button>
+</div>
+</div>
+<!-- <h3 id="rollno"></h3>
+<h3 id="sname"></h3>
+<hr class="bg-primary">
+<div id="img1"></div>
+<h3 id="result"></h3>
+<h3 id="grade"></h3> -->
+
+<br> <br>
+
+
+
+     <div class="border  shadow w-50 p-4">
+      
+        <h3 id="rollno"></h3>
+        <h3 id="stdname"></h3>
+        <h2 id="engmark"></h2>
+        <h3 id="total"></h3>
+        <h3 id="per"></h3>
+        <h3 id="Grade"></h3>
+        <h3 id="pass"></h3>
+        <div id="img"></div>
+        
+        <div class="d-flex flex-wrap">
+        <div class="flex-grow-1 flex-shrink-0 w-50">
+            <img src="image/smily.png" width="250px" height="200px" style="object-fit: contain; display: none;" id="img1" alt="">
+            <h4 class="text-success" style="display: none;">Congratulations! You are passed by good marks</h4>
+        </div>
+
+
+        <div class="flex-grow-1 flex-shrink-0 w-50">
+            <img src="image/sad emoji1.jpg" width="250px" height="200px" style="object-fit: contain; display: none;" id="img2" alt="">
+            <h4 class="text-danger" style="display: none;" >Sad! you are fail, better luck next time</h4>
+        </div>
+    </div>
+       
+        
+       </div>
+
+
+
+
+     </div>
+    </div>
+
+    
+       <script>
+        function result() {
+            name = document.getElementById("name").value;
+            no = document.getElementById("no").value;
+            
+            sub1 = parseInt(document.getElementById("s1").value);
+            sub2 = parseInt(document.getElementById("s2").value);
+            sub3 = parseInt(document.getElementById("s3").value);
+            sub4 = parseInt(document.getElementById("s4").value);
+            sub5 = parseInt(document.getElementById("s5").value);
+            sub6 = parseInt(document.getElementById("s6").value);
+            sub7 = parseInt(document.getElementById("s7").value);
+            total = sub1 + sub2 + sub3 + sub4 + sub5 + sub6 + sub7;
+            per = total/7;
+
+            document.getElementById("rollno").innerText="roll no : " +no;
+            document.getElementById("stdname").innerText="Student Name : " +name;
+            document.getElementById("total").innerText = "Total Marks :" + total;
+            document.getElementById("per").innerText = "Percentage :" + per;
+            document.getElementById("Grade").innerText = "grade :" + Grade;
+            alert(no);
+
+            if(per>=90)
+        {
+            document.getElementById("Grade").innerText = "A grade"
+        }
+        else if(per>=75)
+        {
+             document.getElementById("Grade").innerText = "B grade"
+        }
+        else if(per>=60)
+        {
+             document.getElementById("Grade").innerText = "c grade"
+        }
+        else if(per>=55)
+        {
+             document.getElementById("Grade").innerText = "D grade"
+        }
+        else if(per>=30)
+        {
+             document.getElementById("Grade").innerText = "E grade"
+        }
+
+        if(per>=33){
+            document.getElementById("pass").innerText = "PASS"
+            document.getElementById("img1").style.display = "block"
+             document.getElementById("img2").style.display = "none"
+        
+        }
+          else{
+            document.getElementById("pass").innerText = "FAIL"
+             document.getElementById("img2").style.display = "block"
+             document.getElementById("img1").style.display = "none"
+        }
+        }
+
+      
+    </script>
+    
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

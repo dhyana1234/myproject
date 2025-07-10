@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="data">
+    <button onclick="addarray()">Submit</button>
+    <ul id="list"></ul>
+
+    <script>
+            a=[];
+        function addarray(){
+            var s = document.getElementById("data").value;
+            a.push(s);
+            list();
+            }
+
+            function list(){
+                document.getElementById("list").innerHTML="";
+                for(i=0;i<a.length;i++)
+            {
+                d="<li>"+a[i]+"</li>";
+                document.getElementById("list").innerHTML+=d;
+                document.getElementById("list").style.listStyleType="none"
+            }
+            }
+    </script>
+</body>
+</html>

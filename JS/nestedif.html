@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="number" id="txt" placeholder="enter the number">
+        <button onclick="checkDay()">Day</button>
+        <h1 id="result"></h1>
+    </div>
+
+
+    <script>
+        function checkDay(){
+            a = parseInt(document.getElementById("txt").value)
+            if(a==1){
+                document.getElementById("result").innerText = "Sunday";
+            }
+            else{
+                if(a==2){
+                    document.getElementById("result").innerText = "Monday"
+               }
+                else{
+                    if (a==3) {
+                        document.getElementById("result").innerText = "Tuesday"
+                    }
+                    else{
+                        if (a==4){
+                             document.getElementById("result").innerText = "Wednesday"
+
+                        }
+                        else{
+                            if (a==5){
+                             document.getElementById("result").innerText = "Thursday"
+                            }
+                            else{
+                                if (a==6){
+                             document.getElementById("result").innerText = "Friday"
+                                }
+                                else{
+                                    if (a==7){
+                             document.getElementById("result").innerText = "Saturday"
+                                    }
+                                    else{
+                                        {
+                           document.getElementById("result").innerText = "Invalid"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>

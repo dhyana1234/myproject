@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Start</label>
+    <input type="number">
+
+    <label>End</label>
+    <input type="number">
+
+    <button onclick="checkvalue()">Print</button>
+    <ul id="data"></ul>
+
+    <script>
+        function checkvalue(){
+            var a=5
+            while(a>0 && a<0){
+
+                document.getElementById("data").innerText=a
+            }
+        }
+    </script>
+    
+</body>
+</html>

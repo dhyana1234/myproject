@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="data">
+    <button onclick="checkData()">Check</button>
+    <h1 id="result"></h1>
+    <h1 id=""></h1>
+    <script>
+        function checkData(){
+            var a = parseInt(document.getElementById("data").value);
+       
+        switch(a)
+        {
+            case 1:
+                document.getElementById("result").innerText="January";
+                document.getElementById("result").style.color="yellow"
+
+                break;
+
+         case 2:
+            document.getElementById("result").innerText="February"
+            document.getElementById("result").style.color="Red"
+
+            break;
+
+             case 3:
+            document.getElementById("result").innerText="March"
+            document.getElementById("result").style.color="Blue"
+
+            break;
+
+             case 4:
+            document.getElementById("result").innerText="April"
+            document.getElementById("result").style.color="Green"
+
+            break;
+
+             case 5:
+            document.getElementById("result").innerText="May"
+            document.getElementById("result").style.color="hotpink"
+
+            break;
+
+             case 6:
+            document.getElementById("result").innerText="Jun"
+            document.getElementById("result").style.color="Orange"
+
+            break;
+
+             case 7:
+            document.getElementById("result").innerText="July"
+            document.getElementById("result").style.color="Light green"
+
+            break;
+
+             case 8:
+            document.getElementById("result").innerText="August"
+            document.getElementById("result").style.color="Grey"
+
+            break;
+
+             case 9:
+            document.getElementById("result").innerText="Sepetember"
+            document.getElementById("result").style.color="Pink"
+
+            break;
+
+             case 10:
+            document.getElementById("result").innerText="October"
+            document.getElementById("result").style.color="Silver"
+
+            break;
+
+             case 11:
+            document.getElementById("result").innerText="Navember"
+            document.getElementById("result").style.color="hotpink"
+
+            break;
+
+             case 12:
+            document.getElementById("result").innerText="December"
+            break;
+
+            default:
+                document.getElementById("result").innerText="Invalid Number"
+        }
+    }
+    </script>
+</body>
+</html>

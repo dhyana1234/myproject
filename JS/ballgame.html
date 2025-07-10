@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<style>
+    .d1{
+        height: 300px;
+        width: 500px;
+        border: 1px solid blue;
+    }
+    .d2{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: hotpink;
+        margin-top: 200px;
+
+    }
+</style>
+<body style="margin: 50px;">
+    <div class="d1">
+        <div class="d2" id="d2"></div>
+    </div>
+    <button onclick="jump()">Jump up</button>
+    <button onclick="jump1()">Jump down</button>
+
+    <script>
+        function myfunc(){
+            alert("test")
+        }
+        function jump(){
+            document.getElementById("d2").style.marginTop="0px"
+             document.getElementById("d2").style.marginLeft="30px"
+        }
+    </script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

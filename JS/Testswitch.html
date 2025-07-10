@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="week">
+    <button onclick="days()">Submit</button>
+    <h1 id="w1"></h1>
+    <script>
+        function days(){
+
+            a = parseInt(document.getElementById("week").value);
+
+            switch(a){
+
+                case 1: 
+                  document.getElementById("w1").innerText = "Monday"
+                  document.getElementById("w1").style.color="red"
+                break;
+
+                  
+                case 2 :
+                 document.getElementById("w1").innerText="Tuesday"
+                 document.getElementById("w1").style.color="Hotpink"
+                 break;
+
+                case 3:
+                document.getElementById("w1").innerText="Wednesday" 
+                document.getElementById("w1").style.color="Blue"
+                break;
+
+                case 4:
+                    document.getElementById("w1").innerText="Thursday"
+                    document.getElementById("w1").style.color="Hotpink"
+                    break;
+
+               case 5:
+                    document.getElementById("w1").innerText="Friday"
+                    document.getElementById("w1").style.color="yellow"
+                    break;
+
+                case 6:
+                    document.getElementById("w1").innerText="saturday"
+                    document.getElementById("w1").style.color="green"
+                    break;
+
+                case 7:
+                    document.getElementById("w1").innerText="sunday"
+                    document.getElementById("w1").style.color="orange"
+                    break;
+
+                    default:
+
+                    document.getElementById("w1").innerText="Invalid number"
+
+
+
+            }
+        }
+    </script>
+</body>
+</html>

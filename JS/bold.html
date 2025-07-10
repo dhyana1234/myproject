@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 30px;"> <link rel="stylesheet" href="bootstrap.min.css">
+    <div class="container ">
+        
+        <div class="row">
+            <div class="col-md-12"></div>
+            <div class="col-md-2">
+                <input type="number" id="fs" onchange="setFontSize();" class="form-control" >
+            </div>
+            <div class="col-md-2">
+                <input type="color" id="fc" onchange="setFontColor();" class="form-control">
+            </div>
+            <div class="col-md-2">
+                <button id="fb" onclick="setFontWeight();" class="btn btn-warning">B  </button>
+            </div>
+
+            <div class="col-md-2">
+                <button id="fi" onclick="setFontItalic();" class="btn btn-primary">I</button>
+            </div>
+
+            <div class="col-md-2">
+                <button id="fu" onclick="setFontUnderline();" class="btn btn-info">U</button>
+            </div>
+
+            <div class="col-md-12 mt-2" >
+                <textarea id="data" class="form-control" rows="10"></textarea>
+            </div>
+
+            <button id="btn1" onclick="btn();" class="btn btn-info">Demo</button>
+            
+        </div>
+        </div>
+    </div>
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
